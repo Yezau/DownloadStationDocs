@@ -223,61 +223,6 @@
 | `window open/close [窗口名]` | 打开 / 关闭 GUI 窗口 |  |
 | `wireframe` | 开关强制线框 |  |
 
-## 重大事件 ID
-
-### 改变银河局势
-
-| 事件 ID | 作用 | 备注 |
-|------|------|------|
-| `galcom.16` | 创建或加入银河共同体 |  |
-| `action.99` | 在首都星系建立银河市场 |  |
-| `crisis.199` | 开始 Prethoryn 危机 |  |
-| `crisis.100` | 开始 Unbidden 危机 |  |
-| `crisis.200` | 开始 Contingency 危机 |  |
-| `war_in_heaven.100` | 触发天堂之战 |  |
-| `distar.11000` | 生成封闭的 L-Cluster |  |
-| `distar.13000` | 生成 L-Drake 结局的 L-Cluster | 会同时开启全部 L-Gate |
-| `graygoo.1` | L-Cluster：Gray Tempest |  |
-| `graygoo.100` | L-Cluster：Dessanu Consonance |  |
-| `crisis.110` | 开始 Aberrant 危机 |  |
-| `crisis.120` | 开始 Vehement 危机 | 需先有 Unbidden |
-| `crisis.4550` | 发射 Star-Eater |  |
-| `precursor.98` | 生成 Vultaum 母星系 |  |
-| `precursor.598` | 生成 Yuht 母星系 |  |
-| `precursor.1098` | 生成 First League 母星系 |  |
-| `precursor.1598` | 生成 Irassian 母星系 |  |
-| `precursor.2098` | 生成 Cybrex 母星系 |  |
-
-### 解锁飞升路线
-
-| 事件 ID | 作用 |
-|------|------|
-| `cyber.1505` | 解锁 Cybernetic |
-| `synth.1505` | 解锁 Synthetic |
-| `bio.170` | 解锁 Purity |
-| `bio.175` | 解锁 Cloning |
-| `bio.180` | 解锁 Mutation |
-| `shroud.20` | 解锁 Psionic |
-
-### 解锁法令
-
-| 事件 ID | 作用 |
-|------|------|
-| `anomaly.4051` | 解锁 Improved Working Environment |
-| `anomaly.4081` | 解锁 Extensive Sensor Searches |
-| `anomaly.4105` | 解锁 Improved Energy Initiative |
-| `anomaly.4136` | Grants Master's Teachings: The Greater Good |
-| `anomaly.4141` | Grants Master's Teachings: Philosophical Mindset |
-| `anomaly.4151` | Grants Master's Teachings: Diplomatic Trust |
-| `anomaly.416` | Grants Master's Teachings: Warring States |
-| `shroud.320` | Animatus |
-| `shroud.3210` | Will of Temperance |
-| `shroud.3220` | Will of Distraction |
-| `shroud.3230` | Will of Endless |
-| `shroud.3240` | Will of Rebirth |
-| `shroud.3260` | Will of Order |
-| `shroud.3270` | Will of Motion |
-
 ## Modifier 脚本命令
 
 | 指令 | 作用 |
