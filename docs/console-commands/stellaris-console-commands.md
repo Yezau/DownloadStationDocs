@@ -278,37 +278,6 @@
 | `shroud.3260` | Will of Order |
 | `shroud.3270` | Will of Motion |
 
-### 解锁传奇领袖
-
-| 事件 ID | 作用 | 备注 |
-|------|------|------|
-| `galactic_features.303` | Tuborek | 需选中舰船 |
-| `distar.156` | S875.1 Warform | 需选中舰船 |
-| `distar.245` | Caretaker AX7-b | 需选中舰船 |
-| `ancrel.4036` | Oracle |  |
-| `paragon.1` | The Beholder |  |
-| `paragon.228` | Astrocreator Azaryn |  |
-| `paragon.3115` | Keides, Scion of Vagros |  |
-| `leviathans.123` | XuraCorp paragon |  |
-| `leviathans.124` | Riggan paragon |  |
-| `leviathans.125` | Muutagan paragon |  |
-| `leviathans.590` | Curator paragon |  |
-| `enclave.710` | Shroud-Touched paragon |  |
-| `astral_planes.310` | zadigal |  |
-| `astral_planes.6105` | Mercedes Romero |  |
-| `crisis.21125` | Nameless Apostate |  |
-| `grand_archive.1070` | Ceriz t'Xal |  |
-| `grand_archive.1080` | Ruuk Qabruuk |  |
-| `grand_archive.8570` | Captain Ness |  |
-| `extreme_frontiers.352` | Scru |  |
-| `extreme_frontiers.132` | S.I.D.N.I. |  |
-| `shroud.12010` | Ganthuata |  |
-| `shroud.120` | Koborok'Ra |  |
-| `shroud.12030` | Morr |  |
-| `shroud.12040` | Kronen the Afflicted |  |
-| `shroud.12050` | Zulyn the Listener |  |
-| `shroud.12060` | Ouw'ron |  |
-
 ## Modifier 脚本命令
 
 | 指令 | 作用 |
