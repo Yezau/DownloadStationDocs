@@ -20,11 +20,11 @@
 
 ## 游戏列表
 
-| 游戏 | 文档 | 源 Wiki | 当前文档覆盖范围 |
-|------|------|------|------|
-| Hearts of Iron IV | [HOI4 控制台指令](./hoi4-console-commands.md) | `https://hoi4.paradoxwikis.com/Console_commands` | 已收录常用、外交、科技、焦点树、州省、情报、脚本、DLC、新机制与开发者命令 |
-| Stellaris | [Stellaris 控制台指令](./stellaris-console-commands.md) | `https://stellaris.paradoxwikis.com/Console_commands` | 已收录 ID、资源、科技、星球舰队、外交、事件、测试命令、TweakerGUI、部分重大事件 ID 与中文参考资料 |
-| Victoria 3 | [Vic3 控制台指令](./vic3-console-commands.md) | `https://vic3.paradoxwikis.com/Console_commands` | 已收录 ID、国家、法律、利益集团、人口州区、快速模式、AI 调试、事件测试、导出与工具命令 |
-| Crusader Kings III | [CK3 控制台指令](./ck3-console-commands.md) | `https://ck3.paradoxwikis.com/Console_commands` | 已收录资源、角色、头衔、文化信仰、特质技能、关系阴谋、军队、时代事件、批量 effect、脚本示例与部分宝物命令 |
-| Europa Universalis IV | [EU4 控制台指令](./eu4-console-commands.md) | `https://eu4.paradoxwikis.com/Console_commands` | 已收录资源、国家外交、战争、宗教文化、省份核心、地图调试、事件与工具命令 |
-| Europa Universalis V | [EU5 控制台指令](./eu5-console-commands.md) | `https://eu5.paradoxwikis.com/Console_commands` | 已收录基础、货币、国家外交、地点人口建筑、科技制度与调试工具命令 |
+| 游戏 | 文档 | 源 Wiki |
+|------|------|------|
+| Hearts of Iron IV | [HOI4 控制台指令](./hoi4-console-commands.md) | `https://hoi4.paradoxwikis.com/Console_commands` |
+| Stellaris | [Stellaris 控制台指令](./stellaris-console-commands.md) | `https://stellaris.paradoxwikis.com/Console_commands` |
+| Victoria 3 | [Vic3 控制台指令](./vic3-console-commands.md) | `https://vic3.paradoxwikis.com/Console_commands` |
+| Crusader Kings III | [CK3 控制台指令](./ck3-console-commands.md) | `https://ck3.paradoxwikis.com/Console_commands` |
+| Europa Universalis IV | [EU4 控制台指令](./eu4-console-commands.md) | `https://eu4.paradoxwikis.com/Console_commands` |
+| Europa Universalis V | [EU5 控制台指令](./eu5-console-commands.md) | `https://eu5.paradoxwikis.com/Console_commands` |

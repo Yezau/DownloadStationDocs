@@ -9,6 +9,12 @@
 - 默认可通过 `~` 打开控制台。
 - 需要先启用 `debug_mode`。
 
+## 使用说明
+
+- 本页优先收录官方 Wiki 已列出、可直接输入的控制台命令。
+- 很多命令可按 `Tab` 补全参数、ID、特质或头衔键。
+- 很多开关型命令再次输入即可关闭；少数情况下需要读档或重启。
+
 ## ID 与调试信息
 
 | 指令 | 作用 | 备注 |
@@ -100,6 +106,8 @@
 | `add_house_unity_value [数量]` | 增减家族团结值 |  |
 | `start_diarchy [角色ID]` | 开始共治 |  |
 | `end_diarchy [角色ID]` | 结束共治 |  |
+| `abort_travel_plan [角色ID]` | 取消当前旅行/活动计划 | 不写则默认玩家角色 |
+| `skip_activity_phase [角色ID]` | 直接进入下一活动阶段 | 不写则默认玩家角色 |
 | `yesmen` | AI 总是接受提议 | 再输入一次可关闭 |
 | `yesmen_instant` | AI 立刻接受提议 | 再输入一次可关闭 |
 | `nomen` | AI 总是拒绝提议 | 再输入一次可关闭 |
@@ -137,6 +145,8 @@
 | `discover_fascination [角色ID]` | 解锁当前迷思 |  |
 | `discover_innovation [创新ID] [角色ID]` | 解锁指定创新 |  |
 | `join_era [时代ID]` | 进入指定时代 |  |
+| `gain_all_dynasty_perks [角色ID]` | 解锁宗族全部传承 | 不写则默认玩家角色宗族 |
+| `merge_culture [文化ID] [文化ID]` | 把前者文化的全部伯爵领并入后者 | 直接按文化 ID 输入 |
 | `event [事件ID] [角色ID]` | 触发事件 |  |
 | `set_date [年.月.日]` | 设置日期 | 未写月日则默认为 1 月 1 日 |
 | `start_struggle [struggle ID]` | 开始 struggle |  |
@@ -156,6 +166,7 @@
 | `script_docs` | 输出脚本文档到日志 |  |
 | `map_editor` | 打开地图编辑器 |  |
 | `portrait_editor` | 打开肖像编辑器 |  |
+| `tick_development [数量]` | 给全部伯爵领增加发展度 |  |
 | `set_is_ai [角色ID]` | 让 AI 控制指定角色 |  |
 | `set_is_player [角色ID]` | 取消 AI 控制指定角色 |  |
 | `dump_bookmark_portraits` | 导出书签角色肖像 | 输出到文档目录 |
@@ -199,6 +210,9 @@
 | `effect create_artifact_papal_tiara_effect = { OWNER = this }` | 生成 Papal Tiara |  |
 | `effect create_artifact_throne_solomon_effect = { OWNER = this }` | 生成 Throne of Solomon |  |
 | `effect create_artifact_szczerbiec_effect = { OWNER = this }` | 生成 Szczerbiec |  |
+| `effect create_artifact_durendal_effect = { OWNER = this }` | 生成 Durendal |  |
+| `effect create_artifact_curtana_effect = { OWNER = this }` | 生成 Curtana |  |
+| `effect create_artifact_olifant_effect = { OWNER = this }` | 生成 Olifant |  |
 
 ## 相关页面
 

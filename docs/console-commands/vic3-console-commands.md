@@ -9,6 +9,12 @@
 - 默认可通过 `~` 打开控制台。
 - 需要先启用 `debug_mode`。
 
+## 使用说明
+
+- 本页优先收录官方 Wiki 已列出的直接输入命令。
+- 许多开关型命令再次输入即可关闭；有时需要读档或重启才会完全恢复。
+- 按 `Tab` 可补全命令或查看可用参数。
+
 ## ID 与调试命令
 
 | 指令 | 作用 | 备注 |
@@ -17,6 +23,7 @@
 | `debug_mode` | 开关调试模式 |  |
 | `debug [arguments]` | 执行多种调试动作 | 参数可配合官方 wiki 的 debug 参数表使用 |
 | `hq_show_id` | 开关 HQ ID 显示 |  |
+| `province_borders [true/false]` | 显示或隐藏省份边界 |  |
 
 ## 常用国家与战争命令
 
@@ -36,6 +43,7 @@
 | `conquerall [国家tag]` | 控制全部敌方省份 |  |
 | `create_country [国家定义] [国家类型] [文化] [州ID]` | 创建国家 |  |
 | `create_political_movement [运动类型key]` | 创建政治运动 |  |
+| `create_ai [self/all/tag]` | 为指定国家创建 AI |  |
 
 ## 科技、法律与利益集团命令
 
@@ -52,6 +60,7 @@
 | `ignore_government_support` | 开关无视政府支持要求 |  |
 | `ignore_power_bloc_requirements` | 开关无视权力集团加入/退出要求 |  |
 | `permitmarginalizedingovernment` | 开关允许边缘利益集团入阁 |  |
+| `skip_migration` | 开关跳过迁移 |  |
 
 ## 人口、州区与经济命令
 
@@ -70,6 +79,7 @@
 | `validate_employment` | 输出各州失业情况 |  |
 | `validate_income` | 输出收入赤字国家 |  |
 | `disable_pop_growth` | 开关禁用人口增长 |  |
+| `disable_retooling` | 开关禁用生产方式重整 |  |
 
 ## 快速模式与开关命令
 
@@ -98,6 +108,7 @@
 | `nosupportloss` | 阻止国家失去战争支持 |  |
 | `noshortages` | 禁止供给短缺惩罚 |  |
 | `yesmen` | AI 同意全部外交提议与拉拢 |  |
+| `debug_lens_option` | 开关 debug lens option |  |
 
 ## AI 调试命令
 
@@ -132,6 +143,7 @@
 | `date [yyyy.mm.dd.hh]` | 修改日期 |  |
 | `Complete_journal_entry [journal entry type]` | 完成指定日志条目 |  |
 | `testobjective [subgoal key]` | 测试目标触发效果 |  |
+| `deiron` | 关闭 Ironman 模式 |  |
 | `create_building_history` | 导出建筑历史数据 |  |
 | `create_pop_history` | 导出完整人口历史 |  |
 | `create_state_region_data` | 导出州区数据 |  |
@@ -148,6 +160,7 @@
 | `textureviewer` | 打开纹理查看器 |  |
 | `log_viewer` | 打开日志查看器 |  |
 | `save_game_analyzer` | 打开存档分析器 |  |
+| `Map.SavePNG [map mode] [file name] [yes/no]` | 按指定地图模式导出 PNG | 已知 `countries` 可用 |
 | `rendertype` | 输出渲染后端 |  |
 | `time` | 输出时间信息 |  |
 | `version` | 输出版本信息 |  |
