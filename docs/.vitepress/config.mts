@@ -65,7 +65,12 @@ export default defineConfig({
           text: '控制台指令',
           items: [
             { text: '概述', link: '/console-commands/' },
-            { text: '钢铁雄心4指令', link: '/console-commands/hoi4-console-commands' }
+            { text: '十字军之王3指令', link: '/console-commands/ck3-console-commands' },
+            { text: '欧陆风云4指令', link: '/console-commands/eu4-console-commands' },
+            { text: '欧陆风云5指令', link: '/console-commands/eu5-console-commands' },
+            { text: '钢铁雄心4指令', link: '/console-commands/hoi4-console-commands' },
+            { text: '群星指令', link: '/console-commands/stellaris-console-commands' },
+            { text: '维多利亚3指令', link: '/console-commands/vic3-console-commands' }
           ]
         }
       ]
@@ -73,7 +78,7 @@ export default defineConfig({
 
     // 编辑链接
     editLink: {
-      pattern: 'https://github.com/Alloy81284/DownloadStationDocs/edit/main/docs/:path',
+      pattern: 'https://github.com/Yezau/DownloadStationDocs/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页'
     },
 
@@ -85,7 +90,7 @@ export default defineConfig({
     // 页脚
     footer: {
       message: '问题反馈QQ群: 538887146',
-      copyright: 'Copyright © 2025 业钊下载站. All Rights Reserved.'
+      copyright: 'Copyright © 2025-2026 业钊下载站. All Rights Reserved.'
     },
 
     // 搜索

@@ -19,8 +19,8 @@ body {
 }
 
 .VPNavBar {
-  background: color-mix(in srgb, var(--vp-c-bg) 86%, transparent);
-  backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--vp-c-bg) 92%, transparent);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--vp-c-divider-light);
 }
 
@@ -57,24 +57,29 @@ body {
 }
 
 .VPHome {
-  background:
-    radial-gradient(circle at top, rgba(37, 99, 235, 0.08), transparent 34%),
-    linear-gradient(180deg, var(--vp-c-bg-soft) 0%, var(--vp-c-bg) 380px);
+  background: linear-gradient(180deg, var(--vp-c-bg) 0%, var(--vp-c-bg-soft) 100%);
 }
 
 .VPHome .VPHero {
-  padding-top: 72px;
-  padding-bottom: 56px;
+  padding-top: 56px;
+  padding-bottom: 28px;
 }
 
 .VPHome .VPHero .main {
-  max-width: 720px;
+  max-width: 760px;
 }
 
 .VPHome .VPHero .name {
-  font-size: clamp(2.8rem, 7vw, 4.6rem);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.VPHome .VPHero .text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  margin-bottom: 10px;
 }
 
 .VPHome .VPHero .text,
@@ -83,18 +88,23 @@ body {
   color: var(--vp-c-text-2);
 }
 
+.VPHome .VPHero .tagline {
+  font-size: 1.06rem;
+}
+
 .VPHome .actions {
   gap: 12px;
 }
 
 .VPButton {
-  border-radius: 14px !important;
+  border-radius: 12px !important;
   padding-inline: 18px !important;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  min-width: 112px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
 }
 
 .VPButton.brand {
-  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.14);
 }
 
 .VPButton:hover {
@@ -102,25 +112,29 @@ body {
 }
 
 .VPFeatures {
-  padding-top: 8px;
+  padding-top: 18px;
 }
 
 .VPFeature {
   border: 1px solid var(--vp-c-divider-light) !important;
-  border-radius: 20px !important;
-  background: color-mix(in srgb, var(--vp-c-bg) 94%, white);
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  border-radius: 18px !important;
+  background: var(--vp-c-bg);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .VPFeature:hover {
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   border-color: color-mix(in srgb, var(--vp-c-brand-1) 28%, var(--vp-c-divider-light));
-  box-shadow: 0 16px 36px rgba(37, 99, 235, 0.08);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.06);
 }
 
 .VPFeature .title {
   font-size: 1.05rem;
+}
+
+.VPFeature .details {
+  color: var(--vp-c-text-2);
 }
 
 .VPSidebar {
