@@ -71,13 +71,26 @@ body {
   background: var(--vp-c-bg);
 }
 
+.VPHome .container {
+  max-width: 1180px;
+}
+
 .VPHome .VPHero {
-  padding-top: 36px;
-  padding-bottom: 12px;
+  padding-top: 12px;
+  padding-bottom: 8px;
 }
 
 .VPHome .VPHero .main {
   max-width: 760px;
+}
+
+.VPHome .VPHero .container {
+  padding-top: 0 !important;
+}
+
+.VPHome .VPHero .image,
+.VPHome .VPHero .image-container {
+  display: none !important;
 }
 
 .VPHome .VPHero .name {
@@ -86,6 +99,7 @@ body {
   letter-spacing: -0.03em;
   -webkit-text-fill-color: initial;
   color: var(--vp-c-text-1);
+  margin-top: 0;
 }
 
 .VPHome .VPHero .text {
@@ -102,13 +116,19 @@ body {
   color: var(--vp-c-text-2);
 }
 
+.VPHome .VPHero .text {
+  margin-top: 0;
+}
+
 .VPHome .VPHero .tagline {
   font-size: 0.95rem;
   line-height: 1.7;
+  margin-top: 10px;
 }
 
 .VPHome .actions {
   gap: 10px;
+  margin-top: 16px;
 }
 
 .VPButton {
@@ -165,15 +185,11 @@ body {
   margin-bottom: 12px;
 }
 
-.VPHome .container {
-  max-width: 1180px;
-}
-
 .home-grid {
   display: grid;
   grid-template-columns: 1.35fr 1fr 1fr;
   gap: 16px;
-  margin: 24px auto 8px;
+  margin: 16px auto 8px;
 }
 
 .home-panel {
@@ -395,8 +411,8 @@ body {
 
 @media (max-width: 959px) {
   .VPHome .VPHero {
-    padding-top: 28px;
-    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 6px;
   }
 
   .home-grid {
@@ -410,6 +426,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .VPHome .VPHero .main {
+    max-width: 100%;
+  }
+
   .VPHome .VPHero .name {
     font-size: 1.8rem;
   }
