@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "业钊下载站"
-  text: "文档中心"
+  text: "文档"
   tagline: "统一整理游戏下载、MOD 安装、补丁使用与常见问题，进入文档后即可按步骤完成配置与排查。"
   actions:
     - theme: brand
