@@ -76,8 +76,8 @@ body {
 }
 
 .VPHome .VPHero {
-  padding-top: 12px;
-  padding-bottom: 8px;
+  padding-top: 40px;
+  padding-bottom: 16px;
 }
 
 .VPHome .VPHero .main {
@@ -85,7 +85,7 @@ body {
 }
 
 .VPHome .VPHero .container {
-  padding-top: 0 !important;
+  padding-top: 12px !important;
 }
 
 .VPHome .VPHero .image,
@@ -99,7 +99,7 @@ body {
   letter-spacing: -0.03em;
   -webkit-text-fill-color: initial;
   color: var(--vp-c-text-1);
-  margin-top: 0;
+  margin-top: 8px;
 }
 
 .VPHome .VPHero .text {
@@ -117,7 +117,7 @@ body {
 }
 
 .VPHome .VPHero .text {
-  margin-top: 0;
+  margin-top: 6px;
 }
 
 .VPHome .VPHero .tagline {
@@ -128,7 +128,7 @@ body {
 
 .VPHome .actions {
   gap: 10px;
-  margin-top: 16px;
+  margin-top: 18px;
 }
 
 .VPButton {
@@ -411,8 +411,8 @@ body {
 
 @media (max-width: 959px) {
   .VPHome .VPHero {
-    padding-top: 8px;
-    padding-bottom: 6px;
+    padding-top: 28px;
+    padding-bottom: 12px;
   }
 
   .home-grid {

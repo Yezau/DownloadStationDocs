@@ -14,18 +14,15 @@ hero:
       link: https://share.yezau.com
 
 features:
-  - icon: 🚀
-    title: 入门指南
+  - title: 入门指南
     details: 覆盖安装、启动、汉化等常用流程，适合首次使用时直接按顺序阅读。
     link: /getting-started/
     linkText: 立即查看
-  - icon: 🧩
-    title: 问题排查
+  - title: 问题排查
     details: 收集常见报错、启动异常与安装问题，帮助快速定位并完成处理。
     link: /troubleshooting/
     linkText: 查看解答
-  - icon: ⌨️
-    title: 控制台指令
+  - title: 控制台指令
     details: 汇总常用游戏控制台命令，适合查 ID、调试或临时修改游戏状态。
     link: /console-commands/
     linkText: 浏览指令
