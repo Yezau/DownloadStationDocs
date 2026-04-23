@@ -72,20 +72,20 @@ body {
 }
 
 .VPHome .container {
-  max-width: 1180px;
+  max-width: 1060px;
 }
 
 .VPHome .VPHero {
-  padding-top: 40px;
-  padding-bottom: 16px;
+  padding-top: 32px;
+  padding-bottom: 6px;
 }
 
 .VPHome .VPHero .main {
-  max-width: 760px;
+  max-width: 720px;
 }
 
 .VPHome .VPHero .container {
-  padding-top: 12px !important;
+  padding-top: 0 !important;
 }
 
 .VPHome .VPHero .image,
@@ -94,12 +94,13 @@ body {
 }
 
 .VPHome .VPHero .name {
-  font-size: clamp(1.9rem, 3.2vw, 2.8rem);
-  line-height: 1.12;
+  font-size: clamp(1.85rem, 2.7vw, 2.55rem);
+  line-height: 1.08;
   letter-spacing: -0.03em;
   -webkit-text-fill-color: initial;
   color: var(--vp-c-text-1);
-  margin-top: 8px;
+  margin-top: 0;
+  margin-bottom: 6px;
 }
 
 .VPHome .VPHero .text {
@@ -117,18 +118,19 @@ body {
 }
 
 .VPHome .VPHero .text {
-  margin-top: 6px;
+  margin-top: 0;
 }
 
 .VPHome .VPHero .tagline {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin-top: 10px;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
 .VPHome .actions {
   gap: 10px;
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 .VPButton {
@@ -144,11 +146,11 @@ body {
 }
 
 .VPFeatures {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .VPFeatures .container {
-  padding-bottom: 12px;
+  padding-bottom: 4px;
 }
 
 .VPFeature {
@@ -164,7 +166,7 @@ body {
 }
 
 .VPFeature .box {
-  padding: 18px 18px !important;
+  padding: 16px 16px !important;
 }
 
 .VPFeature .title {
@@ -174,7 +176,7 @@ body {
 
 .VPFeature .details {
   color: var(--vp-c-text-2);
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 .VPFeature .link {
@@ -188,15 +190,15 @@ body {
 .home-grid {
   display: grid;
   grid-template-columns: 1.35fr 1fr 1fr;
-  gap: 16px;
-  margin: 16px auto 8px;
+  gap: 12px;
+  margin: 10px auto 0;
 }
 
 .home-panel {
   border: 0;
   border-radius: 8px;
   background: var(--yezau-surface-soft);
-  padding: 20px;
+  padding: 16px;
   box-shadow: none;
 }
 
@@ -205,10 +207,10 @@ body {
 }
 
 .home-panel-label {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 700;
   color: var(--vp-c-text-2);
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -216,14 +218,14 @@ body {
 .home-panel-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .home-panel-link {
   display: inline-flex;
   align-items: center;
-  min-height: 40px;
-  padding: 0 14px;
+  min-height: 34px;
+  padding: 0 12px;
   border-radius: 6px;
   background: var(--yezau-surface);
   color: var(--vp-c-text-1);
@@ -241,14 +243,23 @@ body {
 .home-panel p {
   margin: 0;
   color: var(--vp-c-text-2);
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 .home-panel-list ul {
   margin: 0;
   padding-left: 18px;
   color: var(--vp-c-text-2);
-  line-height: 2;
+  line-height: 1.8;
+}
+
+.VPContent.is-home {
+  padding-bottom: 24px;
+}
+
+.VPHome .VPFooter,
+.VPHome + .VPFooter {
+  margin-top: 28px;
 }
 
 .VPSidebar {
@@ -412,7 +423,7 @@ body {
 @media (max-width: 959px) {
   .VPHome .VPHero {
     padding-top: 28px;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
   }
 
   .home-grid {
@@ -431,12 +442,12 @@ body {
   }
 
   .VPHome .VPHero .name {
-    font-size: 1.8rem;
+    font-size: 1.65rem;
   }
 
   .VPHome .VPHero .tagline {
-    font-size: 0.92rem;
-    line-height: 1.65;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
 
   .VPFeature {
@@ -444,7 +455,7 @@ body {
   }
 
   .home-panel {
-    padding: 16px;
+    padding: 14px;
   }
 
   .vp-doc table {
