@@ -76,16 +76,18 @@ body {
 }
 
 .VPHome .VPHero {
-  padding-top: 32px;
-  padding-bottom: 6px;
+  padding-top: 28px;
+  padding-bottom: 14px;
+}
+
+.VPHome .VPHero .container {
+  display: block;
+  padding-top: 0 !important;
 }
 
 .VPHome .VPHero .main {
   max-width: 720px;
-}
-
-.VPHome .VPHero .container {
-  padding-top: 0 !important;
+  width: 100%;
 }
 
 .VPHome .VPHero .image,
@@ -93,22 +95,29 @@ body {
   display: none !important;
 }
 
+.VPHome .VPHero .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
 .VPHome .VPHero .name {
   font-size: clamp(1.85rem, 2.7vw, 2.55rem);
-  line-height: 1.08;
+  line-height: 1.1;
   letter-spacing: -0.03em;
   -webkit-text-fill-color: initial;
   color: var(--vp-c-text-1);
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 
 .VPHome .VPHero .text {
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   font-weight: 600;
-  color: var(--vp-c-brand-1);
-  margin-bottom: 8px;
-  letter-spacing: 0.04em;
+  color: var(--vp-c-text-2);
+  margin-bottom: 0;
+  letter-spacing: 0;
 }
 
 .VPHome .VPHero .text,
@@ -124,13 +133,13 @@ body {
 .VPHome .VPHero .tagline {
   font-size: 0.92rem;
   line-height: 1.65;
-  margin-top: 6px;
+  margin-top: 18px;
   margin-bottom: 0;
 }
 
 .VPHome .actions {
   gap: 10px;
-  margin-top: 14px;
+  margin-top: 18px;
 }
 
 .VPButton {
@@ -146,11 +155,12 @@ body {
 }
 
 .VPFeatures {
-  padding-top: 10px;
+  padding-top: 0;
 }
 
 .VPFeatures .container {
-  padding-bottom: 4px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .VPFeature {
@@ -167,6 +177,10 @@ body {
 
 .VPFeature .box {
   padding: 16px 16px !important;
+}
+
+.VPFeatures .items {
+  margin-top: 0 !important;
 }
 
 .VPFeature .title {
@@ -423,7 +437,7 @@ body {
 @media (max-width: 959px) {
   .VPHome .VPHero {
     padding-top: 28px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
   }
 
   .home-grid {
@@ -445,9 +459,14 @@ body {
     font-size: 1.65rem;
   }
 
+  .VPHome .VPHero .text {
+    font-size: 0.88rem;
+  }
+
   .VPHome .VPHero .tagline {
     font-size: 0.9rem;
     line-height: 1.6;
+    margin-top: 14px;
   }
 
   .VPFeature {
