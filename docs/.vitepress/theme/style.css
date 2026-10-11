@@ -1,0 +1,318 @@
+/**
+ * 业钊下载站文档主题
+ * 只覆盖 VitePress 默认主题的设计变量与少量排版细节：
+ * 纸色底、墨色字、青色链接、朱砂印章点缀。
+ */
+
+/* ---------- 设计变量 ---------- */
+
+:root {
+  --ds-seal: #b8432f;
+  --ds-font-display: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', serif;
+
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'HarmonyOS Sans SC', 'MiSans', 'Microsoft YaHei UI', 'Microsoft YaHei', 'Noto Sans SC',
+    'Source Han Sans SC', sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', 'Cascadia Code', ui-monospace, Consolas, Menlo,
+    monospace;
+
+  --vp-c-bg: #fbfaf6;
+  --vp-c-bg-alt: #f4f1ea;
+  --vp-c-bg-soft: #efebe2;
+  --vp-c-bg-elv: #ffffff;
+
+  --vp-c-text-1: #1e1c19;
+  --vp-c-text-2: #57534c;
+  --vp-c-text-3: #8a857b;
+
+  --vp-c-border: #cfc8b9;
+  --vp-c-divider: #e6e1d6;
+  --vp-c-gutter: #e6e1d6;
+
+  --vp-c-gray-1: #ddd7ca;
+  --vp-c-gray-2: #e6e1d6;
+  --vp-c-gray-3: #eeeae1;
+  --vp-c-gray-soft: rgba(120, 108, 86, 0.12);
+
+  --vp-c-brand-1: #1a625e;
+  --vp-c-brand-2: #1f716c;
+  --vp-c-brand-3: #237a75;
+  --vp-c-brand-soft: rgba(35, 122, 117, 0.12);
+
+  --vp-c-yellow-1: #85540f;
+  --vp-c-yellow-2: #9a6414;
+  --vp-c-yellow-3: #b0761c;
+  --vp-c-yellow-soft: rgba(176, 118, 28, 0.13);
+
+  --vp-c-red-1: #a3382a;
+  --vp-c-red-2: #b8432f;
+  --vp-c-red-3: #c9543f;
+  --vp-c-red-soft: rgba(184, 67, 47, 0.12);
+
+  --vp-home-hero-name-color: var(--vp-c-text-1);
+  --vp-nav-logo-height: 22px;
+}
+
+.dark {
+  --ds-seal: #d0573f;
+
+  --vp-c-bg: #151413;
+  --vp-c-bg-alt: #110f0e;
+  --vp-c-bg-soft: #1e1c1a;
+  --vp-c-bg-elv: #1c1a18;
+
+  --vp-c-text-1: #ebe6dc;
+  --vp-c-text-2: #aea79a;
+  --vp-c-text-3: #7a7468;
+
+  --vp-c-border: #3d3934;
+  --vp-c-divider: #2b2825;
+  --vp-c-gutter: #0b0a09;
+
+  --vp-c-gray-1: #4a453f;
+  --vp-c-gray-2: #3a3631;
+  --vp-c-gray-3: #2c2926;
+  --vp-c-gray-soft: rgba(150, 138, 118, 0.16);
+
+  --vp-c-brand-1: #7cc7bf;
+  --vp-c-brand-2: #3d9b93;
+  --vp-c-brand-3: #2a7a74;
+  --vp-c-brand-soft: rgba(124, 199, 191, 0.14);
+
+  --vp-c-yellow-1: #e8b765;
+  --vp-c-yellow-2: #c9953f;
+  --vp-c-yellow-3: #9a6a1f;
+  --vp-c-yellow-soft: rgba(232, 183, 101, 0.14);
+
+  --vp-c-red-1: #f0907c;
+  --vp-c-red-2: #e0735a;
+  --vp-c-red-3: #b8432f;
+  --vp-c-red-soft: rgba(224, 115, 90, 0.15);
+}
+
+/* ---------- 标题字体 ---------- */
+
+.vp-doc h1,
+.vp-doc h2,
+.VPHome .VPHero .name,
+.VPHome .VPHero .text {
+  font-family: var(--ds-font-display);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.vp-doc h1 {
+  font-size: 30px;
+  line-height: 1.35;
+}
+
+.vp-doc h2 {
+  font-size: 22px;
+}
+
+/* ---------- 首页 ---------- */
+
+.VPHome .VPHero .name,
+.VPHome .VPHero .text {
+  max-width: none;
+}
+
+.VPHome .VPHero .name {
+  font-size: clamp(36px, 6vw, 58px);
+  line-height: 1.2;
+}
+
+.VPHome .VPHero .text {
+  margin-top: 10px;
+  font-size: clamp(20px, 2.6vw, 28px);
+  line-height: 1.4;
+  color: var(--vp-c-text-2);
+}
+
+.VPHome .VPHero .tagline {
+  max-width: 30em;
+  padding-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+@media (max-width: 959px) {
+  .VPHome .VPHero .image {
+    display: none;
+  }
+
+  .VPHome .VPHero.has-image .container {
+    text-align: left;
+  }
+
+  .VPHome .VPHero.has-image :is(.name, .text, .tagline) {
+    margin: 0;
+  }
+
+  .VPHome .VPHero.has-image .actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .VPHome .VPHero :is(.heading, .tagline, .actions) {
+    animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .VPHome .VPHero .tagline {
+    animation-delay: 0.1s;
+  }
+
+  .VPHome .VPHero .actions {
+    animation-delay: 0.2s;
+  }
+
+  .VPHome .home-index {
+    animation: rise 0.7s 0.3s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+/* 首页正文：按症状索引 */
+.home-index {
+  display: grid;
+  gap: 48px;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+@media (min-width: 960px) {
+  .home-index {
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    gap: 72px;
+  }
+}
+
+.vp-doc .home-index h2 {
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+  font-family: var(--vp-font-family-base);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--vp-c-text-3);
+}
+
+.vp-doc .home-index ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vp-doc .home-index li {
+  margin: 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc .home-index li a {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.vp-doc .home-index li a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+/* ---------- 正文细节 ---------- */
+
+.vp-doc a {
+  text-underline-offset: 3px;
+}
+
+.vp-doc ol > li::marker {
+  font-weight: 600;
+  color: var(--vp-c-text-3);
+}
+
+/* 截图：细边框衬底，避免与纸色背景粘连 */
+.vp-doc img {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+}
+
+.vp-doc kbd {
+  display: inline-block;
+  min-width: 1.8em;
+  padding: 0 6px;
+  border: 1px solid var(--vp-c-border);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+  background: var(--vp-c-bg-elv);
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.85em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* 排查路线：在 markdown 中用 <div class="route"> 包裹有序列表 */
+.vp-doc .route > ol {
+  position: relative;
+  margin: 24px 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: route;
+}
+
+.vp-doc .route > ol > li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 24px 44px;
+  counter-increment: route;
+}
+
+.vp-doc .route > ol > li::before {
+  content: counter(route);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 50%;
+  background: var(--vp-c-bg);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc .route > ol > li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  bottom: 2px;
+  left: 13px;
+  border-left: 1px dashed var(--vp-c-border);
+}
+
+.vp-doc .route > ol > li > p:first-child {
+  margin: 0 0 4px;
+}
+
+.vp-doc .route > ol > li > ul {
+  margin: 4px 0 0;
+}

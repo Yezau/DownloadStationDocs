@@ -2,54 +2,54 @@
 layout: home
 
 hero:
-  name: "业钊下载站"
-  text: "文档"
-  tagline: "统一整理游戏下载、MOD 安装、补丁使用与常见问题，进入文档后即可按步骤完成配置与排查。"
+  name: 业钊下载站文档
+  text: 安装、汉化与报错排查
+  tagline: 为 P 社游戏、DLC 与 MOD 整理的图文说明。遇到问题，先按症状找到对应页面，大多数报错几分钟内就能自己解决。
   actions:
     - theme: brand
-      text: 快速开始
-      link: /getting-started/
+      text: 按症状排查
+      link: /troubleshooting/
     - theme: alt
-      text: 前往主站
-      link: https://share.yezau.com
-
-features:
-  - title: 入门指南
-    details: 覆盖安装、启动、汉化等常用流程，适合首次使用时直接按顺序阅读。
-    link: /getting-started/
-    linkText: 立即查看
-  - title: 问题排查
-    details: 收集常见报错、启动异常与安装问题，帮助快速定位并完成处理。
-    link: /troubleshooting/
-    linkText: 查看解答
-  - title: 控制台指令
-    details: 汇总常用游戏控制台命令，适合查 ID、调试或临时修改游戏状态。
-    link: /console-commands/
-    linkText: 浏览指令
-
-markdown: |
-  <div class="home-grid">
-    <section class="home-panel home-panel-primary">
-      <div class="home-panel-label">常用入口</div>
-      <div class="home-panel-links">
-        <a class="home-panel-link" href="/getting-started/quick-start">快速开始</a>
-        <a class="home-panel-link" href="/getting-started/start-game">启动游戏</a>
-        <a class="home-panel-link" href="/troubleshooting/">问题排查</a>
-        <a class="home-panel-link" href="/console-commands/hoi4-console-commands">HOI4 指令</a>
-      </div>
-    </section>
-    <section class="home-panel home-panel-muted">
-      <div class="home-panel-label">阅读建议</div>
-      <p>首次访问建议先看入门指南；如果遇到安装失败、数据库报错或无法启动，再进入问题解答页面逐项排查。</p>
-    </section>
-    <section class="home-panel home-panel-list">
-      <div class="home-panel-label">内容范围</div>
-      <ul>
-        <li>游戏下载与基础使用</li>
-        <li>MOD / 汉化 / 补丁安装</li>
-        <li>常见启动与运行问题</li>
-        <li>控制台命令与调试说明</li>
-      </ul>
-    </section>
-  </div>
+      text: 新手入门
+      link: /getting-started/
 ---
+
+<div class="home-index">
+
+<section>
+
+## 按症状排查
+
+- [弹窗提示缺少 MSVCP140.dll、d3dx9_43.dll 或 0xc000007b](/troubleshooting/error-with-start-game)
+  缺少运行库或 DirectX 组件，安装后重启即可。
+- [启动器提示数据库错误，DLC 不生效](/troubleshooting/database-error-with-start-game)
+  启动器本地数据库损坏或无法写入，删除重建即可。
+- [启动器装不上、白屏、一直转圈](/troubleshooting/launcher)
+  结束残留进程，或彻底卸载后重装启动器。
+- [MOD 在列表里找不到、灰色或带感叹号](/troubleshooting/install-mod)
+  检查 .mod 文件里的 path 路径和 MOD 文件夹结构。
+- [进游戏黑屏、卡在加载界面、无提示闪退](/troubleshooting/error-with-start-game#black-screen)
+  重置画面设置、更新显卡驱动、切换独立显卡。
+- [存档和设置保存不了，文档在 OneDrive 里](/troubleshooting/documents-folder)
+  文档目录被同步或被安全软件拦截写入。
+
+</section>
+
+<section>
+
+## 从这里开始
+
+- [快速开始](/getting-started/quick-start)
+  通用的下载、解压、覆盖流程。
+- [启动游戏](/getting-started/start-game)
+  首次运行需要先安装 P 社启动器。
+- [关于汉化](/getting-started/localization)
+  切换中文，以及欧陆风云4的特殊处理。
+- [文件位置速查](/getting-started/file-locations)
+  存档、MOD、日志、启动器数据都在哪。
+- [控制台指令](/console-commands/)
+  钢铁雄心4、欧陆风云、群星等 6 款游戏的指令速查。
+
+</section>
+
+</div>

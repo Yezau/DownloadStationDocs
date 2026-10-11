@@ -19,6 +19,7 @@
   "author": "业钊",
   "license": "MIT",
   "devDependencies": {
+    "@fontsource/noto-serif-sc": "^5.3.1",
     "vitepress": "^1.6.4"
   },
   "dependencies": {

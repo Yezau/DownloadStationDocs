@@ -1,182 +1,143 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
+const repo = 'https://github.com/Yezau/DownloadStationDocs'
+
 export default defineConfig({
-  title: "业钊下载站文档",
-  description: "游戏、MOD、补丁的详细安装与使用说明",
   lang: 'zh-CN',
-  base: '/',
-  
-  // 网站头部配置
+  title: '业钊下载站文档',
+  description: '游戏、MOD、补丁的安装说明与常见报错解决方案',
+  cleanUrls: true,
+  lastUpdated: true,
+
   head: [
-    ['link', { rel: 'icon', href: '/logo.svg' }],
-    ['meta', { name: 'theme-color', content: '#3c82f6' }],
-    ['meta', { name: 'og:type', content: 'website' }],
-    ['meta', { name: 'og:locale', content: 'zh_CN' }],
-    ['meta', { name: 'og:site_name', content: "业钊下载站文档" }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['meta', { name: 'theme-color', content: '#fbfaf6' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['meta', { property: 'og:site_name', content: '业钊下载站文档' }]
   ],
 
-  // 主题配置
+  markdown: {
+    theme: { light: 'vitesse-light', dark: 'vitesse-dark' },
+    container: {
+      tipLabel: '提示',
+      warningLabel: '注意',
+      dangerLabel: '危险',
+      infoLabel: '说明',
+      detailsLabel: '展开'
+    }
+  },
+
+  sitemap: { hostname: 'https://docs.share.yezau.com' },
+
+  vite: {
+    server: { port: 25173, host: '0.0.0.0' }
+  },
+
   themeConfig: {
-    // 网站logo
     logo: '/logo.svg',
-    
-    // 导航栏
+
     nav: [
-      { text: '首页', link: '/' },
-      { text: '入门指南', link: '/getting-started/' },
-      { text: '问题解答', link: '/troubleshooting/' },
-      { text: '控制台指令', link: '/console-commands/' },
-      { 
-        text: '外部链接', 
+      { text: '入门指南', link: '/getting-started/', activeMatch: '^/getting-started/' },
+      { text: '问题排查', link: '/troubleshooting/', activeMatch: '^/troubleshooting/' },
+      { text: '控制台指令', link: '/console-commands/', activeMatch: '^/console-commands/' },
+      {
+        text: '链接',
         items: [
-          { text: '回到主站', link: 'https://share.yezau.com' },
-          { text: 'QQ群', link: 'https://qm.qq.com/cgi-bin/qm/qr?k=538887146' }
+          { text: '业钊下载站', link: 'https://share.yezau.com' },
+          { text: 'QQ 群 538887146', link: 'https://qm.qq.com/cgi-bin/qm/qr?k=538887146' }
         ]
       }
     ],
 
-    // 侧边栏
-    sidebar: {
-      '/getting-started/': [
-        {
-          text: '入门指南',
-          items: [
-            { text: '概述', link: '/getting-started/' },
-            { text: '快速开始', link: '/getting-started/quick-start' },
-            { text: '启动游戏', link: '/getting-started/start-game' },
-            { text: '关于汉化', link: '/getting-started/localization' }
-          ]
-        }
-      ],
-      '/troubleshooting/': [
-        {
-          text: '常见问题解答',
-          items: [
-            { text: '概述', link: '/troubleshooting/' },
-            { text: '游戏崩溃报错', link: '/troubleshooting/error-with-start-game' },
-            { text: '数据库错误', link: '/troubleshooting/database-error-with-start-game' },
-            { text: '学习版安装MOD', link: '/troubleshooting/install-mod' }
-          ]
-        }
-      ],
-      '/console-commands/': [
-        {
-          text: '控制台指令',
-          items: [
-            { text: '概述', link: '/console-commands/' },
-            { text: '十字军之王3指令', link: '/console-commands/ck3-console-commands' },
-            { text: '欧陆风云4指令', link: '/console-commands/eu4-console-commands' },
-            { text: '欧陆风云5指令', link: '/console-commands/eu5-console-commands' },
-            { text: '钢铁雄心4指令', link: '/console-commands/hoi4-console-commands' },
-            { text: '群星指令', link: '/console-commands/stellaris-console-commands' },
-            { text: '维多利亚3指令', link: '/console-commands/vic3-console-commands' }
-          ]
-        }
-      ]
-    },
+    sidebar: [
+      {
+        text: '入门指南',
+        items: [
+          { text: '概述', link: '/getting-started/' },
+          { text: '快速开始', link: '/getting-started/quick-start' },
+          { text: '启动游戏', link: '/getting-started/start-game' },
+          { text: '关于汉化', link: '/getting-started/localization' },
+          { text: '文件位置速查', link: '/getting-started/file-locations' }
+        ]
+      },
+      {
+        text: '问题排查',
+        items: [
+          { text: '按症状排查', link: '/troubleshooting/' },
+          { text: '启动崩溃与缺少运行库', link: '/troubleshooting/error-with-start-game' },
+          { text: '启动器数据库错误', link: '/troubleshooting/database-error-with-start-game' },
+          { text: '启动器装不上或白屏', link: '/troubleshooting/launcher' },
+          { text: '安装 MOD 与 MOD 不生效', link: '/troubleshooting/install-mod' },
+          { text: '文档目录与权限问题', link: '/troubleshooting/documents-folder' }
+        ]
+      },
+      {
+        text: '控制台指令',
+        items: [
+          { text: '概述', link: '/console-commands/' },
+          { text: '十字军之王3', link: '/console-commands/ck3-console-commands' },
+          { text: '欧陆风云4', link: '/console-commands/eu4-console-commands' },
+          { text: '欧陆风云5', link: '/console-commands/eu5-console-commands' },
+          { text: '钢铁雄心4', link: '/console-commands/hoi4-console-commands' },
+          { text: '群星', link: '/console-commands/stellaris-console-commands' },
+          { text: '维多利亚3', link: '/console-commands/vic3-console-commands' }
+        ]
+      }
+    ],
 
-    // 编辑链接
+    outline: { level: [2, 3], label: '本页目录' },
+
     editLink: {
-      pattern: 'https://github.com/Yezau/DownloadStationDocs/edit/main/docs/:path',
+      pattern: `${repo}/edit/main/docs/:path`,
       text: '在 GitHub 上编辑此页'
     },
 
-    // 社交链接
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/Alloy81284/DownloadStationDocs' }
-    ],
+    socialLinks: [{ icon: 'github', link: repo }],
 
-    // 页脚
     footer: {
-      message: '问题反馈QQ群: 538887146',
+      message: '问题反馈 QQ 群：538887146',
       copyright: 'Copyright © 2025-2026 业钊下载站. All Rights Reserved.'
     },
 
-    // 搜索
     search: {
       provider: 'local',
       options: {
-        locales: {
-          zh: {
-            translations: {
-              button: {
-                buttonText: '搜索文档',
-                buttonAriaLabel: '搜索文档'
-              },
-              modal: {
-                noResultsText: '无法找到相关结果',
-                resetButtonTitle: '清除查询条件',
-                footer: {
-                  selectText: '选择',
-                  navigateText: '切换'
-                }
-              }
+        translations: {
+          button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' },
+          modal: {
+            displayDetails: '显示详细列表',
+            resetButtonTitle: '清除查询',
+            backButtonTitle: '关闭搜索',
+            noResultsText: '没有找到相关结果',
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭'
             }
           }
         }
       }
     },
 
-
-    // 上次更新时间
     lastUpdated: {
-      text: '最后更新于',
-      formatOptions: {
-        dateStyle: 'short',
-        timeStyle: 'medium'
-      }
+      text: '最后更新',
+      formatOptions: { dateStyle: 'medium' }
     },
 
-    // 文档页脚导航
-    docFooter: {
-      prev: '上一页',
-      next: '下一页'
+    notFound: {
+      title: '页面不存在',
+      quote: '链接可能已失效，试试搜索或回到首页。',
+      linkLabel: '回到首页',
+      linkText: '回到首页'
     },
 
-    // 大纲标题
-    outline: {
-      label: '页面导航'
-    },
-
-    // 返回顶部
+    docFooter: { prev: '上一页', next: '下一页' },
+    darkModeSwitchLabel: '外观',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    sidebarMenuLabel: '目录',
     returnToTopLabel: '回到顶部',
-
-    // 外部链接图标
     externalLinkIcon: true
-  },
-
-  // Markdown配置
-  markdown: {
-    theme: 'github-dark',
-    lineNumbers: true,
-    container: {
-      tipLabel: '提示',
-      warningLabel: '警告',
-      dangerLabel: '危险',
-      infoLabel: '信息',
-      detailsLabel: '详细信息'
-    }
-  },
-
-  // 站点地图
-  sitemap: {
-    hostname: 'https://docs.share.yezau.com'
-  },
-
-  // 开发服务器配置
-  vite: {
-    server: {
-      port: 25173,
-      host: '0.0.0.0'
-    },
-    preview: {
-      port: 25174,
-      host: '0.0.0.0'
-    },
-    serve: {
-      port: 25175,
-      host: '0.0.0.0'
-    }
   }
 })
