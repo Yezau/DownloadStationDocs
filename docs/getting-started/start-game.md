@@ -2,6 +2,10 @@
 
 P 社游戏需要通过 **P 社启动器（Paradox Launcher）** 启动，它负责加载 DLC 和 MOD。
 
+::: tip 推荐：使用 YPGL 启动器
+本站的 [YPGL 启动器](/launcher/) 可以下载游戏本体、补齐 DLC、安装 MOD、切换补丁并直接启动游戏，不需要安装 P 社启动器。下面是不使用 YPGL 时的手动方式。
+:::
+
 ## 第一次运行：安装启动器
 
 每台电脑第一次运行 P 社游戏时，需要先安装启动器。
@@ -20,8 +24,8 @@ P 社游戏需要通过 **P 社启动器（Paradox Launcher）** 启动，它负
 
 | 卡在哪一步 | 查看 |
 | --- | --- |
-| 安装启动器时报错或没反应 | [启动器装不上或白屏](/troubleshooting/launcher) |
-| 启动器白屏、转圈或提示数据库错误 | [启动器装不上或白屏](/troubleshooting/launcher)、[启动器数据库错误](/troubleshooting/database-error-with-start-game) |
+| 安装启动器时报错或没反应 | [P社启动器装不上或白屏](/troubleshooting/launcher) |
+| 启动器白屏、转圈或提示数据库错误 | [P社启动器装不上或白屏](/troubleshooting/launcher)、[P社启动器数据库错误](/troubleshooting/database-error-with-start-game) |
 | 点击开始游戏后弹窗报错 | [启动崩溃与缺少运行库](/troubleshooting/error-with-start-game) |
 | 游戏黑屏或卡在加载界面 | [黑屏与无提示闪退](/troubleshooting/error-with-start-game#black-screen) |
 

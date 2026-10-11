@@ -13,5 +13,15 @@ export default {
   enhanceApp({ app }) {
     app.component('MenuPath', MenuPath)
     app.component('WinDialog', WinDialog)
+
+    if (typeof window !== 'undefined') {
+      // Screenshots are scaled down to the column width; clicking one opens it full size.
+      window.addEventListener('click', (event) => {
+        const img = (event.target as Element | null)?.closest?.('.vp-doc img')
+        if (img instanceof HTMLImageElement && !img.closest('a')) {
+          window.open(img.currentSrc || img.src, '_blank', 'noopener')
+        }
+      })
+    }
   }
 } satisfies Theme

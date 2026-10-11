@@ -39,12 +39,14 @@ export default defineConfig({
 
     nav: [
       { text: '入门指南', link: '/getting-started/', activeMatch: '^/getting-started/' },
+      { text: 'YPGL 启动器', link: '/launcher/', activeMatch: '^/launcher/' },
       { text: '问题排查', link: '/troubleshooting/', activeMatch: '^/troubleshooting/' },
       { text: '控制台指令', link: '/console-commands/', activeMatch: '^/console-commands/' },
       {
         text: '链接',
         items: [
           { text: '业钊下载站', link: 'https://share.yezau.com' },
+          { text: 'YPGL 启动器下载', link: 'https://share.yezau.com/launcher' },
           { text: 'QQ 群 538887146', link: 'https://qm.qq.com/cgi-bin/qm/qr?k=538887146' }
         ]
       }
@@ -62,12 +64,25 @@ export default defineConfig({
         ]
       },
       {
+        text: 'YPGL 启动器',
+        items: [
+          { text: '介绍与安装', link: '/launcher/' },
+          { text: '游戏库与游戏本体', link: '/launcher/library' },
+          { text: 'DLC 补齐', link: '/launcher/dlc' },
+          { text: 'MOD 与播放集', link: '/launcher/mods' },
+          { text: '补丁', link: '/launcher/patches' },
+          { text: '联机大厅', link: '/launcher/multiplayer' },
+          { text: '下载与设置', link: '/launcher/downloads-settings' },
+          { text: '常见问题', link: '/launcher/faq' }
+        ]
+      },
+      {
         text: '问题排查',
         items: [
           { text: '按症状排查', link: '/troubleshooting/' },
           { text: '启动崩溃与缺少运行库', link: '/troubleshooting/error-with-start-game' },
-          { text: '启动器数据库错误', link: '/troubleshooting/database-error-with-start-game' },
-          { text: '启动器装不上或白屏', link: '/troubleshooting/launcher' },
+          { text: 'P社启动器数据库错误', link: '/troubleshooting/database-error-with-start-game' },
+          { text: 'P社启动器装不上或白屏', link: '/troubleshooting/launcher' },
           { text: '安装 MOD 与 MOD 不生效', link: '/troubleshooting/install-mod' },
           { text: '文档目录与权限问题', link: '/troubleshooting/documents-folder' }
         ]

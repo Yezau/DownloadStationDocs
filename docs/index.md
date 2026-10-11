@@ -10,6 +10,9 @@ hero:
       text: 按症状排查
       link: /troubleshooting/
     - theme: alt
+      text: YPGL 启动器
+      link: /launcher/
+    - theme: alt
       text: 新手入门
       link: /getting-started/
 ---
@@ -22,9 +25,9 @@ hero:
 
 - [弹窗提示缺少 MSVCP140.dll、d3dx9_43.dll 或 0xc000007b](/troubleshooting/error-with-start-game)
   缺少运行库或 DirectX 组件，安装后重启即可。
-- [启动器提示数据库错误，DLC 不生效](/troubleshooting/database-error-with-start-game)
+- [P社启动器提示数据库错误，DLC 不生效](/troubleshooting/database-error-with-start-game)
   启动器本地数据库损坏或无法写入，删除重建即可。
-- [启动器装不上、白屏、一直转圈](/troubleshooting/launcher)
+- [P社启动器装不上、白屏、一直转圈](/troubleshooting/launcher)
   结束残留进程，或彻底卸载后重装启动器。
 - [MOD 在列表里找不到、灰色或带感叹号](/troubleshooting/install-mod)
   检查 .mod 文件里的 path 路径和 MOD 文件夹结构。
@@ -39,6 +42,8 @@ hero:
 
 ## 从这里开始
 
+- [YPGL 启动器](/launcher/)
+  本站桌面启动器，下本体、补 DLC、装 MOD、联机一站完成。
 - [快速开始](/getting-started/quick-start)
   通用的下载、解压、覆盖流程。
 - [启动游戏](/getting-started/start-game)

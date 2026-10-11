@@ -52,4 +52,4 @@ D:\Games\Hearts of Iron IV\
 | 启动器数据与日志 | `%LOCALAPPDATA%\Paradox Interactive\launcher-v2` |
 | 启动器缓存 | `%APPDATA%\Paradox Interactive\launcher-v2` |
 
-`AppData` 是隐藏文件夹，直接用上面的 `%` 路径打开最方便。彻底重装启动器时需要清理这几个目录，见 [启动器装不上或白屏](/troubleshooting/launcher#reinstall)。
+`AppData` 是隐藏文件夹，直接用上面的 `%` 路径打开最方便。彻底重装启动器时需要清理这几个目录，见 [P社启动器装不上或白屏](/troubleshooting/launcher#reinstall)。

@@ -251,6 +251,11 @@
 .vp-doc img {
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
+  cursor: zoom-in;
+}
+
+.vp-doc a img {
+  cursor: pointer;
 }
 
 .vp-doc kbd {

@@ -110,7 +110,7 @@ path="C:/Users/你的用户名/Documents/Paradox Interactive/Hearts of Iron IV/m
 2. `.mod` 文件中的 `path` 是否指向真实存在的文件夹，见 [上一节](#path)。
 3. MOD 是否已经解压，文件夹层级是否正确。
 4. 在启动器的「所有已安装 MOD」页面点击刷新，让启动器重新扫描。
-5. 关闭启动器，删除文档目录中的 `mods_registry.json` 和 `launcher-v2.sqlite`，再重新打开，详见 [启动器数据库错误](./database-error-with-start-game#clean-mod-registry)。
+5. 关闭启动器，删除文档目录中的 `mods_registry.json` 和 `launcher-v2.sqlite`，再重新打开，详见 [P社启动器数据库错误](./database-error-with-start-game#clean-mod-registry)。
 6. 安全软件或 OneDrive 可能阻止启动器读取 MOD，见 [文档目录与权限问题](./documents-folder)。
 
 ## MOD 冲突与卡顿 {#mod-conflict}

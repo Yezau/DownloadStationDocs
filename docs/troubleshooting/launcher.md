@@ -1,6 +1,10 @@
-# 启动器装不上或白屏
+# P社启动器装不上或白屏
 
 P 社游戏通过 **Paradox Launcher（P 社启动器）** 管理 DLC 和 MOD。游戏根目录里的 `launcher-installer-windows.msi` 负责安装启动器，`dowser.exe` 负责打开它，首次安装流程见 [启动游戏](/getting-started/start-game)。
+
+::: tip 也可以绕开 P 社启动器
+本站的 [YPGL 启动器](/launcher/) 会直接启动游戏，不经过 P 社启动器，同时能管理 DLC、MOD 和补丁。P 社启动器反复出问题时，可以改用 YPGL。
+:::
 
 ## 安装程序报错或没有反应
 
@@ -23,7 +27,7 @@ P 社游戏通过 **Paradox Launcher（P 社启动器）** 管理 DLC 和 MOD。
 
 1. 在任务管理器中结束所有 `Paradox Launcher` 进程，再重新运行 `dowser.exe`。
 2. 暂时退出安全软件，或者把游戏目录和启动器加入信任区，参见 [文档目录与权限问题](./documents-folder)。
-3. 删除启动器数据库 `launcher-v2.sqlite`，参见 [启动器数据库错误](./database-error-with-start-game)。
+3. 删除启动器数据库 `launcher-v2.sqlite`，参见 [P社启动器数据库错误](./database-error-with-start-game)。
 4. 以上无效时执行 [彻底重装](#reinstall)。
 
 如果只是想先玩上游戏，可以 [绕过启动器直接运行游戏](./error-with-start-game#bypass-launcher)。

@@ -4,12 +4,12 @@
 
 <div class="route">
 
-1. **安装启动器**：运行 `launcher-installer-windows.msi`
-   - 双击没反应，提示 `2503` / `2502` 或 Windows Installer 错误 → [启动器装不上或白屏](./launcher)
+1. **安装 P社启动器**：运行 `launcher-installer-windows.msi`
+   - 双击没反应，提示 `2503` / `2502` 或 Windows Installer 错误 → [P社启动器装不上或白屏](./launcher)
 
-2. **打开启动器**：运行 `dowser.exe`
-   - 白屏、黑屏、一直转圈 → [启动器装不上或白屏](./launcher)
-   - 提示数据库错误，DLC 显示未生效 → [启动器数据库错误](./database-error-with-start-game)
+2. **打开 P社启动器**：运行 `dowser.exe`
+   - 白屏、黑屏、一直转圈 → [P社启动器装不上或白屏](./launcher)
+   - 提示数据库错误，DLC 显示未生效 → [P社启动器数据库错误](./database-error-with-start-game)
    - 提示没有游戏数据目录的读写权限 → [文档目录与权限问题](./documents-folder)
 
 3. **在启动器中启用 MOD**
@@ -34,9 +34,9 @@
 | 症状 | 最可能的原因 | 去哪里看 |
 | --- | --- | --- |
 | 弹窗缺少某个 DLL | 运行库没装全 | [启动崩溃与缺少运行库](./error-with-start-game) |
-| DLC 不显示或未生效 | 启动器数据库损坏 | [启动器数据库错误](./database-error-with-start-game) |
+| DLC 不显示或未生效 | 启动器数据库损坏 | [P社启动器数据库错误](./database-error-with-start-game) |
 | 数据库报错反复出现 | 安全软件拦截写入 | [文档目录与权限问题](./documents-folder#allow-write) |
-| 启动器打不开 | 启动器残留或损坏 | [启动器装不上或白屏](./launcher) |
+| 启动器打不开 | 启动器残留或损坏 | [P社启动器装不上或白屏](./launcher) |
 | MOD 不生效 | `.mod` 文件路径错误 | [安装 MOD](./install-mod#path) |
 | 文档路径带 OneDrive | 文档目录被同步 | [OneDrive 接管了文档目录](./documents-folder#onedrive) |
 | 用户名是中文，老游戏闪退 | 路径不支持中文 | [用户名或路径包含中文](./documents-folder#non-ascii) |
