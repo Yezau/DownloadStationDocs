@@ -67,12 +67,10 @@ export default defineConfig({
         text: 'YPGL 启动器',
         items: [
           { text: '介绍与安装', link: '/launcher/' },
-          { text: '游戏库与游戏本体', link: '/launcher/library' },
-          { text: 'DLC 补齐', link: '/launcher/dlc' },
+          { text: '游戏库与 DLC', link: '/launcher/library' },
           { text: 'MOD 与播放集', link: '/launcher/mods' },
           { text: '补丁', link: '/launcher/patches' },
-          { text: '联机大厅', link: '/launcher/multiplayer' },
-          { text: '下载与设置', link: '/launcher/downloads-settings' },
+          { text: '联机', link: '/launcher/multiplayer' },
           { text: '常见问题', link: '/launcher/faq' }
         ]
       },

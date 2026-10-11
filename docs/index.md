@@ -3,8 +3,7 @@ layout: home
 
 hero:
   name: 业钊下载站文档
-  text: 安装、汉化与报错排查
-  tagline: 为 P 社游戏、DLC 与 MOD 整理的图文说明。遇到问题，先按症状找到对应页面，大多数报错几分钟内就能自己解决。
+  text: P 社游戏的安装、汉化与报错排查
   actions:
     - theme: brand
       text: 按症状排查

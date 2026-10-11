@@ -1,13 +1,12 @@
 /**
  * 业钊下载站文档主题
  * 只覆盖 VitePress 默认主题的设计变量与少量排版细节：
- * 纸色底、墨色字、青色链接、朱砂印章点缀。
+ * 纸色底、墨色字、青色链接。
  */
 
 /* ---------- 设计变量 ---------- */
 
 :root {
-  --ds-seal: #b8432f;
   --ds-font-display: 'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', serif;
 
   --vp-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
@@ -54,8 +53,6 @@
 }
 
 .dark {
-  --ds-seal: #d0573f;
-
   --vp-c-bg: #151413;
   --vp-c-bg-alt: #110f0e;
   --vp-c-bg-soft: #1e1c1a;
@@ -135,24 +132,6 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.9;
-}
-
-@media (max-width: 959px) {
-  .VPHome .VPHero .image {
-    display: none;
-  }
-
-  .VPHome .VPHero.has-image .container {
-    text-align: left;
-  }
-
-  .VPHome .VPHero.has-image :is(.name, .text, .tagline) {
-    margin: 0;
-  }
-
-  .VPHome .VPHero.has-image .actions {
-    justify-content: flex-start;
-  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
