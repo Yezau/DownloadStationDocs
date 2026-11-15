@@ -68,7 +68,7 @@ export default defineConfig({
         items: [
           { text: '介绍与安装', link: '/launcher/' },
           { text: '游戏库与 DLC', link: '/launcher/library' },
-          { text: 'MOD 与播放集', link: '/launcher/mods' },
+          { text: 'MOD、订阅与播放集', link: '/launcher/mods' },
           { text: '补丁', link: '/launcher/patches' },
           { text: '联机', link: '/launcher/multiplayer' },
           { text: '常见问题', link: '/launcher/faq' }
